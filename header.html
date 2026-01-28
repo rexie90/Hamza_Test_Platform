@@ -1,0 +1,137 @@
+ <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Header - اختبارات همزة</title>
+
+    <!-- Bootstrap CSS -->
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+      rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" 
+      rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+        }
+
+        .top-header {
+            background-color: #0b5d3b;
+            padding: 15px 0;
+        }
+
+        .top-header img {
+            height: 60px;
+        }
+
+        .nav-link {
+            color: white !important;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+
+        .section-title {
+            color: #0b5d3b;
+            font-weight: bold;
+        }
+
+        .book-btn {
+            background-color: #ffffff;
+            color: #0b5d3b;
+            border-radius: 0px;  
+            padding: 4px 14px;
+            font-weight: 500;
+            font-size: 14px;
+            border: 1px solid #ffffff;
+        }
+
+        .icon {
+            font-size: 1.2em;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-header">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+           
+            <div>
+                <img src="images/logo_1.jpg" alt="الشعار">
+            </div>
+
+            <div class="d-flex flex-column align-items-start">
+                <img src="images/logo_2.jpg" alt="الشعار">
+                <div class="d-flex align-items-center gap-2 mt-2">
+                    <span class="icon" title="إشعارات">
+                        <i class="bi bi-bell"></i>
+                    </span>
+                    <span class="icon" title="الترجمة">
+                        <i class="bi bi-globe"></i>
+                    </span>
+                    <a href="#" class="btn book-btn">حجز اختبار</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<nav class="navbar navbar-expand-lg" style="background-color: #0b5d3b;">
+    <div class="container">
+        <button class="navbar-toggler bg-light" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainMenu">
+            <ul class="navbar-nav gap-3">
+                <li class="nav-item"><a class="nav-link" href="#">الرئيسية</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">المختبرون</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">الجهات</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">الأبحاث</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">الأخبار</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">معلومات اضافية</a></li>
+
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"></a>
+                    <ul class="dropdown-menu text-end">
+                        <li><a class="dropdown-item" href="#">الأسئلة الشائعة</a></li>
+                        <li><a class="dropdown-item" href="#">التواصل</a></li>
+                        <li><a class="dropdown-item" href="#">سياسة الخصوصية و الاستخدام</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<section class="py-5">
+    <div class="container text-end">
+        <h2 class="section-title mb-4">من نحن</h2>
+        <p class="text-muted">منصة اختبارات همزة هي إحدى الأدوات التقنية الداعمة لمبادرة مجمع الملك سلمان العالمي للغة العربية
+            في بناء الاختبارات المعيارية للغة العربية وتفعيلها.
+            وتهدف المنصة إلى التعريف باختبارات همزة وتطبيقها.
+            كما تتيح توفير بيانات ومؤشرات نوعية لدعم المختصين والباحثين والجهات ذات العلاقة.
+        </p>
+    </div>
+</section>
+
+<script 
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+</script>
+
+</body>
+</html>
