@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+  background: #0f4f3a;
+}
+
+.pillars-section {
+  --bg: #0f4f3a;
+  --card: rgba(79, 127, 107, 0.92);
+  --white: #ffffff;
+  --text-soft: rgba(255, 255, 255, 0.82);
+
+  background: var(--bg);
+  position: relative;
+  overflow: hidden;
+  direction: rtl;
+
+  padding: 85px 48px 85px;
+}
+
+.pillars-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.pillars-title {
+  margin: 0 0 40px 0;
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 600;
+  text-align: right;
+}
+
+.pillars-cards {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 26px;
+}
+
+.pillar-card {
+  width: 350px;
+  background: var(--card);
+  border-radius: 12px;
+  padding: 50px 32px 34px;
+  position: relative;
+
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.22);
+}
+
+.pillar-badge {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+
+  background: #ffffff;
+  color: var(--bg);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
+}
+
+.pillar-title {
+  margin: 8px 0 12px;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.pillar-text {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 14px;
+  line-height: 1.9;
+  text-align: center;
+}
+
+.pillars-section::after {
+  content: "";
+  position: absolute;
+  right: -160px;
+  top: -60px;
+
+  width: 900px;
+  height: 900px;
+
+  background-image: url("images/images_pattern3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  opacity: 0.14;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@media (max-width: 1100px) {
+  .pillars-cards {
+    flex-wrap: wrap;
+  }
+  .pillar-card {
+    width: 100%;
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pillars-section {
+    padding: 70px 18px 70px;
+  }
+  .pillars-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 28px;
+  }
+}
